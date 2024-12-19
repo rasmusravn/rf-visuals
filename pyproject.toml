@@ -32,9 +32,9 @@ allow-direct-references = true
 ##############
 
 [tool.hatch.version]
-source-file = "src/rf_visuals/__version__.py"
-raw-options = { version_scheme = "no-guess-dev" }
-
+source = "regex"
+path = "src/rf_visuals/__version__.py"
+pattern = '__version__ = "(.*?)"'
 
 ##################
 # External Tools #
