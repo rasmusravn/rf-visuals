@@ -1,4 +1,5 @@
-"""Visualization and post-processing of RF data (e.g., Touchstone files). Get a presentation and report data fast."""
+"""Visualization and post-processing of RF data (e.g., Touchstone files).
+Get a presentation and report data fast."""
 
 from importlib.metadata import PackageNotFoundError, version
 
