@@ -1,5 +1,5 @@
 import pytest
-from rf_visuals import add
+from rf_visuals.add import add
 
 
 @pytest.mark.parametrize(
