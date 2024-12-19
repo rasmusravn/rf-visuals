@@ -31,7 +31,9 @@ jobs:
       run: |
         hatch run test:pytest
     - name: Install dependencies
-      run: pip install pytest pytest-cov
+      run: |
+        pip install pytest pytest-cov
+        pip install -e .
 
     - name: Run tests with coverage
       run: |
