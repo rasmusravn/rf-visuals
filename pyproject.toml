@@ -34,8 +34,7 @@ allow-direct-references = true
 [tool.hatch.version]
 source = "regex"
 path = "src/rf_visuals/__version__.py"
-pattern = '__version__ = "(.*?)"'
-
+pattern = '__version__ = "(?P<version>.*?)"'
 ##################
 # External Tools #
 ##################
