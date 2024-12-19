@@ -15,6 +15,7 @@ classifiers = [
 ]
 requires-python = ">=3.13"
 dependencies = [
+    "pydantic>=2.10.4",
 ]
 
 [project.urls]
@@ -207,7 +208,7 @@ dependencies = [
 [tool.hatch.envs.docs.scripts]
 docs-serve = "mkdocs serve"
 docs-build = "mkdocs build --clean --strict"
-validate = "linkchecker --config .linkcheckerrc --ignore-url=/reference --ignore-url=None site"
+validate = "linkchecker --ignore-url=/reference --ignore-url=None site"
 build-check = [
   "docs-build",
   "validate",
