@@ -67,7 +67,7 @@ plugins:
 
 watch:
     - docs
-    - rf_visuals
+    - src/rf_visuals
 
 # Navigation
 nav:
