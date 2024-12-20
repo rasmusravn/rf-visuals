@@ -17,7 +17,12 @@ requires-python = ">=3.13"
 dependencies = [
     "coverage>=7.6.9",
     "pydantic>=2.10.4",
+    "scikit-rf>=1.5.0",
+    "typer>=0.15.1",
 ]
+
+[project.scripts]
+rf-visuals = "rf_visuals.cli:app"
 
 [project.urls]
 Documentation = "https://rasmusravn.github.io/rf-visuals/"
