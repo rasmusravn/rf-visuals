@@ -18,6 +18,4 @@ def visualize_s2p(input_file: str):
         # Create a NamedStringIO with a fake filename
         fobj = NamedStringIO(data, "stdin.s2p")
         ntwk = rf.Network(file=fobj)
-
-    print(f"Loaded S2P file: {input_file if input_file else 'from stdin'}")
-    print(ntwk)
+    return ntwk

@@ -18,8 +18,4 @@ def visualize_s1p(input_file: str):
         data = sys.stdin.read()
         fobj = NamedStringIO(data, "stdin.s1p")
         ntwk = rf.Network(file=fobj)
-
-    # Here you can do anything with the network object.
-    # For demonstration, we'll just print summary info:
-    print(f"Loaded S1P file: {input_file if input_file else 'from stdin'}")
-    print(ntwk)
+    return ntwk

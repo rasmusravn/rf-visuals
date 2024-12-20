@@ -12,7 +12,7 @@ def s1p_command(
         None, help="Path to the S1P file. If not provided, data is read from stdin."
     ),
 ):
-    visualize_s1p(input_file)
+    typer.echo(visualize_s1p(input_file).__str__())
 
 
 @app.command("s2p", help="Visualize data from an S2P file.")
@@ -21,7 +21,7 @@ def s2p_command(
         None, help="Path to the S2P file. If not provided, data is read from stdin."
     ),
 ):
-    visualize_s2p(input_file)
+    typer.echo(visualize_s2p(input_file).__str__())
 
 
 if __name__ == "__main__":
