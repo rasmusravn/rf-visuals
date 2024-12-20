@@ -64,6 +64,7 @@ jobs:
       shell: bash
       run: |
         python -m pip install --upgrade pip
+        pip install setuptools wheel
         pip install hatch pre-commit
     - name: Build
       run: |
